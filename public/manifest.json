@@ -1,0 +1,17 @@
+{
+    "name": "Naive content Chorme extension",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "ncce.html",
+        "default_icon": "ico2.png"
+    },
+    "background": {
+        "service_worker": "ncce-background.js"
+    }
+}
