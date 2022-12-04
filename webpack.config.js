@@ -3,7 +3,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
    mode: "production",
    entry: {
-      "ncce-background": path.resolve(__dirname, "src", "ncce-background.ts"),
+      "ncce-background": path.resolve(__dirname, "src/worker", "ncce-background.ts"),
     //   ncce: path.resolve(__dirname, "src", "ncce.ts"),
    },
    output: {

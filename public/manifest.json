@@ -5,10 +5,13 @@
     "manifest_version": 3,
     "permissions": [
         "activeTab",
-        "scripting"
+        "contextMenus",
+        "tabs",
+        "scripting",
+        "clipboardRead",
+        "clipboardWrite"
     ],
     "action": {
-        "default_popup": "ncce.html",
         "default_icon": "ico2.png"
     },
     "background": {
