@@ -4,7 +4,7 @@ module.exports = {
    mode: "production",
    entry: {
       "ncce-background": path.resolve(__dirname, "src", "ncce-background.ts"),
-      ncce: path.resolve(__dirname, "src", "ncce.ts"),
+    //   ncce: path.resolve(__dirname, "src", "ncce.ts"),
    },
    output: {
       path: path.join(__dirname, "/dist"),
