@@ -34,6 +34,5 @@ chrome.action.onClicked.addListener((tab) => {
     target: { tabId: tab.id ? tab.id : -1 },
     func: getTextContent,
     args: [tab]
-  }).then();
+  });
 });
-
