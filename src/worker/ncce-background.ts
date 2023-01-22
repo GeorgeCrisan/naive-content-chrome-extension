@@ -21,7 +21,7 @@ const getTextContent = (info: any) => {
 
     // Prepare link for download
     a.setAttribute('href', url);
-    a.setAttribute('download', info.title.replace(/[^a-zA-Z ]/g, "") + ".json" || "textcontent.json");
+    a.setAttribute('download', info.title.replace(/[^a-zA-Z ]/g, "") + ".md" || "textcontent.md");
     a.click();
 
     // Do clean up 
