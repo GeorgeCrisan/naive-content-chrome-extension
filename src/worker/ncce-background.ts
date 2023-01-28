@@ -14,14 +14,17 @@ const getTextContent = (info: any) => {
 
     const a = document.createElement('a');
 
+    // Use to be 
+    // const payload = JSON.stringify({ value: textContent });
+    // const blob = new Blob([payload], {type: "application/json"});
+
     // Prepare the payload for upload
-    const payload = JSON.stringify({ value: textContent });
-    const blob = new Blob([payload], {type: "application/json"});
+    const blob = new Blob([textContent], {type: "application/json"});
     const url = URL.createObjectURL(blob);
 
     // Prepare link for download
     a.setAttribute('href', url);
-    a.setAttribute('download', info.title.replace(/[^a-zA-Z ]/g, "") + ".md" || "textcontent.md");
+    a.setAttribute('download', info.title.trim().replace(/[^a-zA-Z]/g, "-") + ".md" || "textcontent.md");
     a.click();
 
     // Do clean up 
